@@ -13,7 +13,7 @@ class RecipesIndex extends Component {
 		if(recipes.length === 0 || recipes === "undefined") {
 			content = "No recipes found"
 		} else {
-			content = recipes.map(recipe => {
+			recipes.map(recipe => {
 				return (<RecipeCard recipe={recipe} />)
 			})
 		}
@@ -29,4 +29,4 @@ class RecipesIndex extends Component {
 	}
 }
 
-export default RecipesIndex
+export default RecipesCard

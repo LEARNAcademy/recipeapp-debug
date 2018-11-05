@@ -3,16 +3,15 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 import Header from './components/Header'
 import Home from './pages/Home'
-import RecipesIndex from './pages/RecipesIndex'
+import RecipesIndex from './RecipesIndex'
 import RecipeShow from './pages/RecipeShow'
 
 class App extends Component {
-	constructor(props) {
-		super(props)
+
 		this.state = {
 			currentUser: "Arthur Dent"
 		}
-	}
+
 
 	render() {
 		let { currentUser, recipes } = this.state
